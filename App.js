@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  Button,
 } from 'react-native';
 
 import {
@@ -25,6 +26,9 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
+  function alertToast() {
+    alert('jfklfjkfl');
+  }
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -40,6 +44,7 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
+              <Button onPress={this.alertToast} title={'kfljfkl'} />
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
@@ -47,7 +52,7 @@ const App: () => React$Node = () => {
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
+              <Text style={styles.sectionTitle}>See Your Changes222</Text>
               <Text style={styles.sectionDescription}>
                 <ReloadInstructions />
               </Text>
@@ -71,7 +76,6 @@ const App: () => React$Node = () => {
     </>
   );
 };
-
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
