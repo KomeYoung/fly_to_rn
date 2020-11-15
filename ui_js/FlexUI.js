@@ -8,9 +8,9 @@ class FlexUI extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button title="Press Me" color="#841584" />
-        <Button title="Press Me" color="#841584" />
-        <Button title="Press Me" color="#841584" />
+        <Button style={styles.button} title="Press Me" color="#841584" />
+        <Button title="Press Me11" color="#841584" />
+        <Button title="Press Me22" color="#841584" />
       </View>
     );
   }
@@ -18,9 +18,17 @@ class FlexUI extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#ff0000',
+    borderLeftWidth: 10,
+    borderLeftColor: 'red',
+
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
+  },
+  button: {
+    borderLeftWidth: 10,
+    borderLeftColor: 'red',
   },
 });
 export default FlexUI;
