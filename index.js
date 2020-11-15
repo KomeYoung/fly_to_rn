@@ -8,4 +8,4 @@ import {name as appName} from './app.json';
 import ButtonBasics from './ui_js/ButtonBasics';
 import FlexUI from './ui_js/FlexUI';
 
-AppRegistry.registerComponent(appName, () => FlexUI);
+AppRegistry.registerComponent(appName, () => App);
